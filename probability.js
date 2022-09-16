@@ -16,6 +16,6 @@ function combinations(n, k){
     return allocations(n, k) / factorial(k)
 }
 
-function pos_integer_equation(r, n){
+function non_neg_integer_equation(r, n){
     return combinations(n-r+1, r-1)
 }
