@@ -1,5 +1,5 @@
 function allocations(n, k)
-// allocations of k objects out of n people
+// allocations of k objects out of n
 {
     let res = 1
     for (let i = 0; i != k; i++) {
