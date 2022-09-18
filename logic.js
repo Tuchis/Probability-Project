@@ -25,7 +25,7 @@ third_butt.addEventListener("click", function () {
 })
 
 
-let str_div_perm = "<span class='formula'>${ P }_n = n!$ </span>>"
+let str_div_perm = "<span class='formula'>${ P }_n = n!$</span>"
 let str_div_p_boosted = "<span class='formula'>${ M }_n(x_1...x_i) =\frac{n!}{x_1...x_i}$</span>>"
 
 
