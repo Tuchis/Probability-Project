@@ -11,7 +11,11 @@ function block_permutations() {
     let values = get_all_similar()
     return permutations_replacement(n, values)
 }
-function get_all_similar() {
+
+function get_all_similar(string) {
+    let array = string.split(" ")
+    array = array.map((x) => parseInt(x))
+    return array
 }
 
 
@@ -26,7 +30,6 @@ function block_allocations() {
 }
 
 
-
 function block_combinations() {
     let answer = "Yes"
     let n = input.value
@@ -36,25 +39,6 @@ function block_combinations() {
     }
     return non_neg_integer_equation(k, n)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 function allocations(n, k)
@@ -71,7 +55,7 @@ function factorial(n) {
     return allocations(n, n)
 }
 
-function permutations_replacement(n, ...values) {
+function permutations_replacement(n, values) {
     let number = factorial(n)
     for (const extra of values) {
         number /= factorial(extra)
