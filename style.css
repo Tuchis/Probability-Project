@@ -6,7 +6,7 @@ body {
     color: #b6b6b6;
 }
 body section {
-    background: white;
+    background: rgb(224, 224, 224);
     margin: 60px auto 120px;
     border-top: 15px solid #313a3d;
     text-align: center;
@@ -22,22 +22,26 @@ body section h1 {
     font-weight: 100;
 }
 form {
-    width: 58.3333333333%;
+    /* width: 58.3333333333%; */
     margin: 0 auto;
 }
 form .field {
-    width: 100%;
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
     position: relative;
     margin-bottom: 15px;
 }
 form .field label {
     text-transform: uppercase;
     position: absolute;
+    padding-left: auto;
+    padding-right: auto;
     top: 0;
     left: 0;
     background: #313a3d;
-    width: 100%;
-    padding: 18px 0;
+    width: 50%;
+    /* padding: 18px 0; */
     font-size: 1.45em;
     letter-spacing: 0.075em;
     -webkit-transition: all 333ms ease-in-out;
@@ -54,6 +58,8 @@ form .field label + span {
     position: absolute;
     top: 12px;
     left: 7%;
+    padding-left: 25%;
+    padding-right: 25%;
     font-size: 2.5em;
     text-shadow: 1px 2px 0 #cd6302;
     -webkit-transition: all 333ms ease-in-out;
@@ -62,19 +68,19 @@ form .field label + span {
     -ms-transition: all 333ms ease-in-out;
     transition: all 333ms ease-in-out;
 }
-form .field input[type="text"], form .field textarea {
+form .field input[type="button"], form .field textarea {
     border: none;
     background: #e8e9ea;
-    width: 80.5%;
+    width: 80%;
     margin: 0;
     padding: 18px 0;
-    padding-left: 19.5%;
+    /* padding-left: 19.5%; */
     color: #313a3d;
     font-size: 1.4em;
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }
-form .field input[type="text"]#msg, form .field textarea#msg {
+form .field input[type="button"]#msg, form .field textarea#msg {
     height: 18px;
     resize: none;
     -webkit-transition: all 333ms ease-in-out;
@@ -83,22 +89,22 @@ form .field input[type="text"]#msg, form .field textarea#msg {
     -ms-transition: all 333ms ease-in-out;
     transition: all 333ms ease-in-out;
 }
-form .field input[type="text"]:focus, form .field textarea:focus, form .field input[type="text"].focused, form .field textarea.focused {
+form .field input[type="button"]:focus, form .field textarea:focus, form .field input[type="text"].focused, form .field textarea.focused {
     outline: none;
 }
-form .field input[type="text"]:focus#msg, form .field textarea:focus#msg, form .field input[type="text"].focused#msg, form .field textarea.focused#msg {
+form .field input[type="button"]:focus#msg, form .field textarea:focus#msg, form .field input[type="text"].focused#msg, form .field textarea.focused#msg {
     padding-bottom: 150px;
 }
-form .field input[type="text"]:focus + label, form .field textarea:focus + label, form .field input[type="text"].focused + label, form .field textarea.focused + label {
-    width: 18%;
+form .field input[type="button"]:focus + label, form .field textarea:focus + label, form .field input[type="text"].focused + label, form .field textarea.focused + label {
+    width: 50%;
     background: #fd9638;
     color: #313a3d;
 }
-form .field input[type="text"].focused + label, form .field textarea.focused + label {
+form .field input[type="button"].focused + label, form .field textarea.focused + label {
     color: #fd9638;
 }
 form .field:hover label {
-    width: 18%;
+    width: 50%;
     background: #313a3d;
     color: white;
 }
@@ -128,3 +134,86 @@ form input[type="submit"]:focus {
     outline: none;
     background: #cd6302;
 }
+.wrapper {
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+  }
+.tabs {
+    position: relative;
+    margin: 3rem 0;
+    background: #cd6302;
+    height: 14.75rem;
+  }
+  .tabs::before,
+  .tabs::after {
+    content: "";
+    display: table;
+  }
+  .tabs::after {
+    clear: both;
+  }
+  .tab {
+    float: left;
+  }
+  .tab-switch {
+    display: none;
+  }
+  .tab-label {
+    position: relative;
+    display: block;
+    line-height: 2.75em;
+    height: 3em;
+    padding: 0 1.618em;
+    background: #cd6302;
+    border-right: 0.125rem solid #16a085;
+    color: #fff;
+    cursor: pointer;
+    top: 0;
+    transition: all 0.25s;
+    width: 150px;
+  }
+  .tab-label:hover {
+    top: -0.25rem;
+    transition: top 0.25s;
+  }
+  .tab-content {
+    width: 100%;
+    height: 12rem;
+    position: absolute;
+    z-index: 1;
+    top: 2.75em;
+    left: 0;
+    padding-top: 1.618rem;
+    background: #fff;
+    color: white;
+    border-bottom: 0.25rem solid #bdc3c7;
+    opacity: 0;
+    transition: all 0.35s;
+  }
+  .tab-switch:checked + .tab-label {
+    background: #fff;
+    color: #2c3e50;
+    border-bottom: 0;
+    border-right: 0.125rem solid #fff;
+    transition: all 0.35s;
+    z-index: 1;
+    top: -0.0625rem;
+  }
+  .tab-switch:checked + label + .tab-content {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+  }
+  #yesnoperm{
+    transition-property: background-color;
+    transition-duration: 1s;
+  }
+  #yesnoaloc{
+    transition-property: background-color;
+    transition-duration: 1s;
+  }
+  #yesnocomb{
+    transition-property: background-color;
+    transition-duration: 1s;
+  }

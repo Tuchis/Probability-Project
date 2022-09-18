@@ -3,33 +3,60 @@
 <head>
 	<title>Probability</title>
 	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 </head>
 <body>
 
 	<section id="hire">
 		<h1>Contact Me</h1>
 		
-		<form>
-			<div class="field name-box">
-				<input type="text" id="name" placeholder="Who Are You?"/>
-				<label for="name">Name</label>
-				<span class="ss-icon">check</span>
+	  <div class="wrapper">
+		<div class="tabs">
+		  <div class="tab">
+			<input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+			<label for="tab-1" class="tab-label">Permutations</label>
+			<div class="tab-content">
+				<form>
+					<div class="field name-box">
+						<input type="button" id="yesnoperm" value="Text" onclick="ButtonColor('yesnoperm')"/>
+						<span class="ss-icon">check</span>
+					</div>
+			
+					<input class="button" type="submit" value="Send" />
+			  </form>
 			</div>
-	
-			<div class="field email-box">
-				<input type="text" id="email" placeholder="name@email.com"/>
-				<label for="email">Email</label>
-				<span class="ss-icon">check</span>
+		  </div>
+		  <div class="tab">
+			<input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+			<label for="tab-2" class="tab-label">Allocations</label>
+			<div class="tab-content">
+				<form>
+					<div class="field name-box">
+						<input type="button" id="yesnoaloc" value="Text" onclick="ButtonColor('yesnoaloc')"/>
+						<span class="ss-icon">check</span>
+					</div>
+			
+					<input class="button" type="submit" value="Send" />	
+				</form>
 			</div>
-	
-			<div class="field msg-box">
-				<textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
-				<label for="msg">Msg</label>
-				<span class="ss-icon">check</span>
+		  </div>
+		  <div class="tab">
+			<input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
+			<label for="tab-3" class="tab-label">Combinations</label>
+			<div class="tab-content">
+				<form>
+					<div class="field name-box">
+						<input type="button" id="yesnocomb" value="Text" onclick="ButtonColor('yesnocomb')"/>
+						<span class="ss-icon">check</span>
+					</div>
+			
+					<input class="button" type="submit" value="Send" />	
+				</form>
 			</div>
-	
-			<input class="button" type="submit" value="Send" />
-	  </form>
+		  </div>
+		</div>
+		<p>Example line outside of tab box</p>
+	  </div>
 	</section>
 	<script src="script.js"></script>
 

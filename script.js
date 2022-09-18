@@ -40,3 +40,14 @@ $('#hire .field:nth-child(2) input').blur(function () {
         }
     });
 });
+function ButtonColor(id) {
+  // alert()
+  if (document.getElementById(id).style.background != "green"){
+    document.getElementById(id).style.background = "green"
+    document.getElementById(id).value = "Yes"
+  }
+  else{
+    document.getElementById(id).style.background = "#e8e9ea"
+    document.getElementById(id).value = "No"
+  };
+}
