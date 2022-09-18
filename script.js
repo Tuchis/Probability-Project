@@ -42,8 +42,8 @@ $('#hire .field:nth-child(2) input').blur(function () {
 });
 function ButtonColor(id) {
   // alert()
-  if (document.getElementById(id).style.background != "green"){
-    document.getElementById(id).style.background = "green"
+  if (document.getElementById(id).value != "Yes"){
+    document.getElementById(id).style.background = "#90EE90"
     document.getElementById(id).value = "Yes"
   }
   else{
