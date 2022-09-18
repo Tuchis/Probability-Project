@@ -29,7 +29,7 @@ body section h1 {
     font-weight: 100;
 }
 form {
-    /* width: 58.3333333333%; */
+     /*width: 58.3333333333%;*/
     margin: 0 auto;
 }
 form .field {
@@ -123,6 +123,7 @@ form input[type="submit"] {
     text-transform: uppercase;
     position: relative;
     padding: 13px 50px;
+    margin-top: 20px;
     font-size: 1.4em;
     letter-spacing: 0.1em;
     font-family: 'Lato', sans-serif;
@@ -150,7 +151,7 @@ form input[type="submit"]:focus {
     position: relative;
     margin: 3rem 0;
     background: #cd6302;
-    height: 20rem;
+    height: 50rem;
   }
   .tabs::before,
   .tabs::after {
@@ -186,7 +187,7 @@ form input[type="submit"]:focus {
   }
   .tab-content {
     width: 100%;
-    height: 15rem;
+    height: 45rem;
     position: absolute;
     z-index: 1;
     top: 2.75em;
@@ -227,7 +228,7 @@ form input[type="submit"]:focus {
    form .field2 label {
 	 text-transform: uppercase;
 	 position: absolute;
-	 top: 200px;
+	 top: 239px;
 	 left: 15%;
 	 background: #313a3d;
 	 width: 70%;
@@ -297,5 +298,5 @@ form input[type="submit"]:focus {
 	 color: white;
 }
 #label2{
-    top: 350px;
+    top: 334px;
 }
