@@ -1,134 +1,144 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Probability</title>
-	<link rel="stylesheet" href="style.css">
+    <title>Probability</title>
+    <link rel="stylesheet" href="style.css">
 
-	 <script>
+    <script>
         MathJax = {
-          tex: {
-            inlineMath: [['$', '$'], ['\\(', '\\)']]
-          }
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
         };
     </script>
-    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <script type="text/javascript" id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
     <style>
         .formula {
-            font-size: 45px;
-			color: black;
+            font-size: 60px;
+            color: black;
+            display: none;
+            margin-top: 10%;
         }
     </style>
 </head>
 <body>
 
-	<section id="hire">
-		<h1>Contact Me</h1>
+<section id="hire">
+    <h1>Contact Me</h1>
 
-	  <div class="wrapper">
-		<div class="tabs">
-		  <div class="tab">
-			<input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
-			<label for="tab-1" class="tab-label">Permutations</label>
-			<div class="tab-content">
-				<h1>Permutations</h1>
-				<form>
-					<div class="field name-box">
-						<h2>Heloo</h2>
-						<input type="button" id="yesnoperm" value="No" onclick="ButtonColor('yesnoperm')"/>
-					</div>
+    <div class="wrapper">
+        <div class="tabs">
+            <div class="tab">
+                <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+                <label for="tab-1" class="tab-label">Permutations</label>
+                <div class="tab-content">
+                    <h1>Permutations</h1>
+                    <form>
+                        <div class="field name-box">
+                            <h2>Heloo</h2>
+                            <input type="button" id="yesnoperm" value="No" onclick="ButtonColor('yesnoperm')"/>
+                        </div>
 
-					  <div class="field2 inputer">
-						  <h2>Heloo</h2>
-							<input type="text" id="permelem" placeholder="Number of elements"/>
-							<label for="permelem">Number</label>
-					  </div>
+                        <div class="field2 inputer">
+                            <h2>Heloo</h2>
+                            <input type="text" id="permelem" placeholder="Number of elements"/>
+                            <label for="permelem">Number</label>
+                        </div>
 
-						<div class="field2 inputer">
-							<h2 id="hider">Heloo</h2>
-							<input type="text" id="multinom" placeholder="Enter group numbers"/>
-							<label for="multinom" id="label2hider">Groups</label>
-					  </div>
+                        <div class="field2 inputer">
+                            <h2 id="hider">Heloo</h2>
+                            <input type="text" id="multinom" placeholder="Enter group numbers"/>
+                            <label for="multinom" id="label2hider">Groups</label>
+                        </div>
 
-					<input class="button" type="button" value="Send" id="send1"/>
-			  </form>
+                        <input class="button" type="button" value="Send" id="send1"/>
+                    </form>
 
-				<div id="1">
+                    <div id="1" class="formula">
+                        ${ P }_n = n!$
+                    </div>
+                    <div id="4" class="formula">
+                        ${ M }_n(x_1...x_i) \frac{n!}{x_1...x_i}$
+                    </div>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+                <label for="tab-2" class="tab-label">Allocations</label>
+                <div class="tab-content">
+                    <h1>Allocations</h1>
+                    <form>
+                        <h2>Heloo</h2>
+                        <div class="field name-box">
+                            <input type="button" id="yesnoaloc" value="No" onclick="ButtonColor('yesnoaloc')"/>
+                        </div>
 
-				</div>
+                        <div class="field2 inputer">
+                            <h2>Heloo</h2>
+                            <input type="text" id="alocall" placeholder="Number of elements"/>
+                            <label for="alocall">Number</label>
+                        </div>
 
-			</div>
-		  </div>
-		  <div class="tab">
-			<input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
-			<label for="tab-2" class="tab-label">Allocations</label>
-			<div class="tab-content">
-				<h1>Allocations</h1>
-				<form>
-											<h2>Heloo</h2>
-					<div class="field name-box">
-						<input type="button" id="yesnoaloc" value="No" onclick="ButtonColor('yesnoaloc')"/>
-					</div>
-
-					  <div class="field2 inputer">
-						  <h2>Heloo</h2>
-							<input type="text" id="alocall" placeholder="Number of elements"/>
-							<label for="alocall">Number</label>
-					  </div>
-
-						<div class="field2 inputer">
-							<h2>Heloo</h2>
-							<input type="text" id="alocnumber" placeholder="Enter group numbers"/>
-							<label for="alocnumber" id="label2">Groups</label>
-					  </div>
-
-
-					<input class="button" type="submit" value="Send" id="send2"/>
-				</form>
-
-				<div id="2">
-
-				</div>
-
-			</div>
-		  </div>
-		  <div class="tab">
-			<input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
-			<label for="tab-3" class="tab-label">Combinations</label>
-			<div class="tab-content">
-				<h1>Combinations</h1>
-				<form>
-					<h2>Heloo</h2>
-					<div class="field name-box">
-						<input type="button" id="yesnocomb" value="No" onclick="ButtonColor('yesnocomb')"/>
-					</div>
-										  <div class="field2 inputer">
-						  <h2>Heloo</h2>
-							<input type="text" id="comball" placeholder="Number of elements"/>
-							<label for="comball">Number</label>
-					  </div>
-
-						<div class="field2 inputer">
-							<h2>Heloo</h2>
-							<input type="text" id="combgroupnum" placeholder="Enter group numbers"/>
-							<label for="combgroupnum" id="label2">Groups</label>
-					  </div>
-
-					<input class="button" type="submit" value="Send" id="send3"/>
+                        <div class="field2 inputer">
+                            <h2>Heloo</h2>
+                            <input type="text" id="alocnumber" placeholder="Enter group numbers"/>
+                            <label for="alocnumber" id="label2">Groups</label>
+                        </div>
 
 
+                        <input class="button" type="submit" value="Send" id="send2"/>
+                    </form>
 
-				<div id="3">
+                    <div id="2" class="formula">
+                        $n...n = n^k$
+                    </div>
+                    <div id="5" class="formula">
+                        $A_n^k =\frac{n!}{(n-k)!}$
+                    </div>
 
-				</div>
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
+                <label for="tab-3" class="tab-label">Combinations</label>
+                <div class="tab-content">
+                    <h1>Combinations</h1>
+                    <form>
+                        <h2>Heloo</h2>
+                        <div class="field name-box">
+                            <input type="button" id="yesnocomb" value="No" onclick="ButtonColor('yesnocomb')"/>
+                        </div>
+                        <div class="field2 inputer">
+                            <h2>Heloo</h2>
+                            <input type="text" id="comball" placeholder="Number of elements"/>
+                            <label for="comball">Number</label>
+                        </div>
 
-			</div>
-		  </div>
-		</div>
-		<p>Example line outside of tab box</p>
-	  </div>
-	</section>
-	<script src="script.js"></script>
-	<script src="logic.js"></script>
+                        <div class="field2 inputer">
+                            <h2>Heloo</h2>
+                            <input type="text" id="combgroupnum" placeholder="Enter group numbers"/>
+                            <label for="combgroupnum" id="label2">Groups</label>
+                        </div>
+
+                        <input class="button" type="submit" value="Send" id="send3"/>
+
+
+                        <div id="3">
+                            ${C}_n^k =\frac{n!}{(n-k)! k!}$
+                        </div>
+                        <div id="6" class="formula">
+                            ${C}_{n+k-1}^{k-1} = rac{(n+k-1)!}{n!(k-1)!}$
+                        </div>
+
+                </div>
+            </div>
+        </div>
+        <p>Example line outside of tab box</p>
+    </div>
+</section>
+<script src="script.js"></script>
+<script src="logic.js"></script>
 
 </body>
 </html>
