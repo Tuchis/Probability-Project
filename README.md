@@ -1,5 +1,3 @@
-# Probability-Project
-
 # All probability professors hate this online calculator
 
 # Based on AI (c)
