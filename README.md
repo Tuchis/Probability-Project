@@ -18,3 +18,5 @@ Can chosen places repeat? Yes - n^k, No - A(n, k)
 Want to divide them into groups?
    Yes -  C(n+k-1, k-1)
    No - C(n, k)
+   
+   
