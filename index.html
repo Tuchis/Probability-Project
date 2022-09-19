@@ -36,12 +36,18 @@
             margin-right: auto;
         }
 
+        span.planetext {
+            font-size: 20px;
+            margin-top: 0;
+            display: inline;
+            line-height: normal;
+        }
     </style>
 </head>
 <body>
 
 <section id="hire">
-    <h1>Contact Me</h1>
+    <h1>All probability professors hate this online calculator</h1>
 
 
     <h2 class="top">Combinations involve, generally speaking, picking a subset out of a larger set. Choosing three students from a class of 26 would be an example of combinations, or picking out three blueberries out of a bush with 600 berries. With combinations, order doesn’t matter.<br><br>
@@ -85,6 +91,8 @@ Allocations are somewhat similar to permutations, but now you can choose how man
                         ${ P }_n = n!$
                     </div>
                     <div id="4" class="formula">
+                        <span class="planetext">Multinomial coefficient: If we want to permutate all objects, but don’t account for the arrangement of objects within one group of objects we can divide our all permutation by all possible permutation of objects withing group. More theoretically, іf we have N objects out of which N1 objects are of type 1, N2 objects are of type 2, ... Nk objects are of type k, then number of ways of arrangement of these N objects are given by:</span>
+
                         ${ M }_n(x_1...x_i) = \frac{n!}{x_1...x_i}$
                     </div>
 
@@ -161,6 +169,15 @@ Allocations are somewhat similar to permutations, but now you can choose how man
                             ${C}_n^k =\frac{n!}{(n-k)! k!}$
                         </div>
                         <div id="6" class="formula">
+                            <span class="planetext">Combinations with Repetition. Assume that we have a
+set A with n elements. Any selection of r objects from A, where each
+object can be selected more than once, is called a combination of n
+objects taken r at a time with repetition. For instance, the combinations
+of the letters a, b, c, d taken 3 at a time with repetition are: aaa, aab,
+aac, aad, abb, abc, abd, acc, acd, add, bbb, bbc, bbd, bcc, bcd, bdd, ccc, ccd,
+cdd, ddd. Two combinations with repetition are considered identical
+if they have the same elements repeated the same number of times,
+regardless of their order.</span>
                             ${C}_{n+k-1}^{k-1} = rac{(n+k-1)!}{n!(k-1)!}$
                         </div>
                     <span class="answer">
