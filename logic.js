@@ -15,29 +15,27 @@ const div_fifth = document.getElementById("5")
 const div_sixth = document.getElementById("6")
 
 
+const answers = document.getElementsByClassName("answer")
+const answer_perm = answers[0]
+const answer_alloc = answers[1]
+const answer_comb = answers[2]
+
 
 first_butt.addEventListener("click", function () {
-    block_permutations()
+    let number = block_permutations()
+    answer_perm.innerHTML = "Answer: " + number.toString()
 })
 
 second_butt.addEventListener("click", function () {
-    block_allocations()
+    let number = block_allocations()
+    answer_alloc.innerHTML = "Answer: " + number.toString()
 })
 
 third_butt.addEventListener("click", function () {
-    block_combinations()
+    let number = block_combinations()
+    answer_comb.innerHTML = "Answer: " + number.toString()
 })
 
-
-// let str_div_perm = "<span class='formula'>${ P }_n = n!$</span>"
-// let str_div_p_boosted = "<span class='formula'>${ M }_n(x_1...x_i) =\frac{n!}{x_1...x_i}$</span>>"
-
-
-// let str_div_alloc = "<span class='formula'>$n...n = n^k$</span>"
-// let str_div_alloc_2 = "<span class='formula'>$A_n^k = \frac{n!}{(n-k)!}$</span>"
-
-// let str_div_comb_1 = "<span class='formula'>${C}_n^k = \frac{n!}{(n-k)! k!}$</span>"
-// let str_div_comb_2 = "<span class='formula'>${C}_{n+k-1}^{k-1} = \frac{(n+k-1)!}{n!(k-1)!}$</span>"
 
 function block_permutations() {
     div_first.style.display = "none"
