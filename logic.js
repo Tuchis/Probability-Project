@@ -60,9 +60,11 @@ function get_all_similar(string) {
 function block_allocations() {
     div_sec.style.display = "none"
     div_fifth.style.display = "none"
+
     let answer = allo_yes_no.value
     let n = parseInt(document.getElementById("alocall").value)
     let k = parseInt(document.getElementById("alocnumber").value)
+
     if (answer === "Yes") {
         div_sec.style.display = "block"
         return n ** k
@@ -74,9 +76,10 @@ function block_allocations() {
 function block_combinations() {
     div_third.style.display = "none"
     div_sixth.style.display = "none"
+
     let answer = comb_yes_no.value
-    let n = parseInt(document.getElementById("comball"))
-    let k = parseInt(document.getElementById("combgroupnum"))
+    let n = parseInt(document.getElementById("comball").value)
+    let k = parseInt(document.getElementById("combgroupnum").value)
     if (answer === "Yes") {
         div_third.style.display = "block"
         return combinations(n, k)
