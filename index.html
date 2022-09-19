@@ -55,7 +55,6 @@ Permutations are simply possible arrangement of your group of objects. For insta
 Allocations are somewhat similar to permutations, but now you can choose how many objects out of group you want to arrange(arrangement of a subset of objects, which are interesting for our event). Choosing how to order students of class, such that first three will be the president of class and vice president is an example of such allocation.<br><br>
 Combinations involve, generally speaking, picking a subset out of a larger set. Choosing three students from a class of 26 would be an example of combinations, or picking out three blueberries out of a bush with 600 berries. With combinations, order doesn’t matter.</h2>
 
-
     <div class="wrapper">
         <div class="tabs">
             <div class="tab">
@@ -79,8 +78,8 @@ Combinations involve, generally speaking, picking a subset out of a larger set. 
                         </div>
 
                         <div class="field2 inputer">
-                            <h2 id="hider">Heloo</h2>
-                            <input type="text" id="multinom" placeholder="group numbers (use space for > 1 group)"/>
+                            <h2 id="hider">Number of elements in similar groups (divide using space)</h2>
+                            <input type="text" id="multinom" placeholder="indistinguishable elements"/>
                             <label for="multinom" id="label2hider">Groups</label>
                         </div>
 
@@ -108,21 +107,21 @@ Combinations involve, generally speaking, picking a subset out of a larger set. 
                 <div class="tab-content">
                     <h1>Allocations</h1>
                     <form>
-                        <h2>Heloo</h2>
+                        <h2>Can chosen places repeat?</h2>
                         <div class="field name-box">
                             <input type="button" id="yesnoaloc" value="No" onclick="ButtonColor('yesnoaloc')"/>
                         </div>
 
                         <div class="field2 inputer">
-                            <h2>Heloo</h2>
+                            <h2>Enter overall number of elements / objects, n in the formula</h2>
                             <input type="text" id="alocall" placeholder="Number of elements"/>
                             <label for="alocall">Number</label>
                         </div>
 
                         <div class="field2 inputer">
-                            <h2>Heloo</h2>
-                            <input type="text" id="alocnumber" placeholder="Enter group numbers"/>
-                            <label for="alocnumber" id="label2">Groups</label>
+                            <h2>How many places do we choose for those n objects?</h2>
+                            <input type="text" id="alocnumber" placeholder="k"/>
+                            <label for="alocnumber" id="label2">subset of n</label>
                         </div>
 
 
@@ -130,7 +129,7 @@ Combinations involve, generally speaking, picking a subset out of a larger set. 
                     </form>
 
                     <div id="2" class="formula">
-                        <span class="planetext">Allocations with replacement </span>
+                        <span class="planetext">Allocations with replacement mean choosing k times places for each of our n objects</span><br>
                         $n...n = n^k$
                     </div>
                     <div id="5" class="formula">
