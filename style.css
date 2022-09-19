@@ -337,6 +337,7 @@ form input[type="button"]:focus {
 div .formula{
     text-align: center;
     align-content: center;
+    line-height: 15px;
 }
 #textpaste{
     line-height: 30px;
