@@ -142,6 +142,33 @@ form input[type="submit"]:focus {
     outline: none;
     background: #cd6302;
 }
+form input[type="button"] {
+    background: #fd9638;
+    color: white;
+    -webkit-appearance: none;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    padding: 13px 50px;
+    margin-top: 20px;
+    font-size: 1.4em;
+    letter-spacing: 0.1em;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    -webkit-transition: all 333ms ease-in-out;
+    -moz-transition: all 333ms ease-in-out;
+    -o-transition: all 333ms ease-in-out;
+    -ms-transition: all 333ms ease-in-out;
+    transition: all 333ms ease-in-out;
+}
+form input[type="button"]:hover {
+    background: #313a3d;
+    color: #fd9638;
+}
+form input[type="button"]:focus {
+    outline: none;
+    background: #cd6302;
+}
 .wrapper {
     max-width: 50rem;
     width: 100%;
