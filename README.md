@@ -11,11 +11,11 @@ Are all objects distinguishable? Yes - P, No - M
 
 ### If you’d like to arrange some of them into specific places, go for Allocations.
 
-Can chosen places repeat? Yes - n^k, No - A(n, k)
+Can chosen places repeat? Yes - $n^k$, No - A(n, k)
 
 ### If you wish to choose a group out of all objects / divide them into groups, go for Combinations.
 
 Want to divide them into groups?
-   Yes -  C(n+k-1, k-1)
-   No - C(n, k)
+   Yes -  $C^{n+k-1}_{k-1}%
+   No - $C^n_k$
    
