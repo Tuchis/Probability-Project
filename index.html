@@ -28,6 +28,14 @@
             margin-top: 15%;
             font-family: initial;
         }
+
+        h2.top {
+            position: relative;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
     </style>
 </head>
 <body>
@@ -35,33 +43,43 @@
 <section id="hire">
     <h1>Contact Me</h1>
 
+
+    <h2 class="top">Combinations involve, generally speaking, picking a subset out of a larger set. Choosing three students from a class of 26 would be an example of combinations, or picking out three blueberries out of a bush with 600 berries. With combinations, order doesn’t matter.<br><br>
+Permutations are simply possible arrangement of your group of objects. For instance, all possible lines consisting of 30 students of group staying in a queue to Trapesna.<br><br>
+Allocations are somewhat similar to permutations, but now you can choose how many objects out of group you want to arrange(arrangement of a subset of objects, which are interesting for our event). Choosing how to order students of class, such that first three will be the president of class and vice president is an example of such allocation.</h2>
+
+
     <div class="wrapper">
         <div class="tabs">
             <div class="tab">
+
                 <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
                 <label for="tab-1" class="tab-label">Permutations</label>
+
                 <div class="tab-content">
                     <h1>Permutations</h1>
+
                     <form>
                         <div class="field name-box">
-                            <h2>Heloo</h2>
+                            <h2>Are all objects distinguishable?</h2>
                             <input type="button" id="yesnoperm" value="No" onclick="ButtonColor('yesnoperm')"/>
                         </div>
 
                         <div class="field2 inputer">
                             <h2>Heloo</h2>
-                            <input type="text" id="permelem" placeholder="Number of elements"/>
+                            <input type="text" id="permelem" placeholder="Overall number of elements"/>
                             <label for="permelem">Number</label>
                         </div>
 
                         <div class="field2 inputer">
                             <h2 id="hider">Heloo</h2>
-                            <input type="text" id="multinom" placeholder="Enter group numbers"/>
+                            <input type="text" id="multinom" placeholder="group numbers (use space for > 1 group)"/>
                             <label for="multinom" id="label2hider">Groups</label>
                         </div>
 
                         <input class="button" type="button" value="Send" id="send1"/>
                     </form>
+
 
                     <div id="1" class="formula">
                         ${ P }_n = n!$
