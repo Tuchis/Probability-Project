@@ -2,9 +2,9 @@
 
 # Based on AI (c)
 
+## Simple tool for solving simple combinatorics cases such as different forms of permutations, allocations or combinations.
 
-
-
+## Some examples of questions to clasify the problem
 ### If you want to place / mix all the objects, you should go for Permutations.
 
 Are all objects distinguishable? Yes - P, No - M
@@ -18,5 +18,4 @@ Can chosen places repeat? Yes - n^k, No - A(n, k)
 Want to divide them into groups?
    Yes -  C(n+k-1, k-1)
    No - C(n, k)
-   
    
