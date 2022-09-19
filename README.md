@@ -16,6 +16,6 @@ Can chosen places repeat? Yes - $n^k$, No - $A^n_k$
 ### If you wish to choose a group out of all objects / divide them into groups, go for Combinations.
 
 Want to divide them into groups?
-   Yes -  $C^{n+k-1}_{k-1}$
+   Yes -  $C^{k-1}_{n+k-1}$
    No - $C^n_k$
    
