@@ -47,10 +47,10 @@
 <body>
 
 <section id="hire">
-    <h1>All probability professors hate this online calculator</h1>
+    <h1 id="toptext">All probability professors hate this online calculator</h1>
 
 
-    <h2 class="top">
+    <h2 class="top" id="toplittext">
 Permutations are simply possible arrangement of your group of objects. For instance, all possible lines consisting of 30 students of group staying in a queue to Trapesna.<br><br>
 Allocations are somewhat similar to permutations, but now you can choose how many objects out of group you want to arrange(arrangement of a subset of objects, which are interesting for our event). Choosing how to order students of class, such that first three will be the president of class and vice president is an example of such allocation.<br><br>
 Combinations involve, generally speaking, picking a subset out of a larger set. Choosing three students from a class of 26 would be an example of combinations, or picking out three blueberries out of a bush with 600 berries. With combinations, order doesn’t matter.</h2>
@@ -133,11 +133,15 @@ Combinations involve, generally speaking, picking a subset out of a larger set. 
                     </form>
 
                     <div id="2" class="formula">
-                        <span class="planetext">Allocations with replacement mean choosing k times places for each of our n objects</span><br>
+                        <span class="planetext">
+                            <h6 id="textpaste">Allocations with replacement mean choosing k times places for each of our n objects
+                            </h6></span><br>
                         $n...n = n^k$
                     </div>
                     <div id="5" class="formula">
-                        <span class="planetext">Allocation of distinguishable objects involve, generally speaking, distributing objects on different distinguishable places.</span>
+
+                        <span class="planetext"><h6 id="textpaste">Allocation of distinguishable objects involve, generally speaking, distributing objects on different distinguishable places.
+                        </h6></span>
                         $A_n^k =\frac{n!}{(n-k)!}$
                     </div>
                     <span class="answer">
@@ -188,10 +192,12 @@ Combinations involve, generally speaking, picking a subset out of a larger set. 
                             ${C}_{n+k-1}^{k-1} = rac{(n+k-1)!}{n!(k-1)!}$
                         </div>
                     <span class="answer">
+
                     </span>
+
+                </div>
             </div>
         </div>
-        <p>Example line outside of tab box</p>
     </div>
 </section>
 <script src="script.js"></script>
