@@ -81,11 +81,12 @@ function block_combinations() {
     let n = parseInt(document.getElementById("comball").value)
     let k = parseInt(document.getElementById("combgroupnum").value)
     if (answer === "Yes") {
-        div_third.style.display = "block"
-        return combinations(n, k)
+        div_sixth.style.display = "block"
+        return non_neg_integer_equation(k, n)
+        
     }
-    div_sixth.style.display = "block"
-    return non_neg_integer_equation(k, n)
+    div_third.style.display = "block"
+        return combinations(n, k)
 }
 
 function allocations(n, k)
