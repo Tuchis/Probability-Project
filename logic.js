@@ -22,18 +22,16 @@ const answer_comb = answers[2]
 
 
 first_butt.addEventListener("click", function () {
-    let number = block_permutations()
-    answer_perm.innerHTML = "Answer: " + number.toString()
+    block_permutations()
 })
 
 second_butt.addEventListener("click", function () {
-    let number = block_allocations()
-    answer_alloc.innerHTML = "Answer: " + number.toString()
+    block_allocations()
 })
 
 third_butt.addEventListener("click", function () {
-    let number = block_combinations()
-    answer_comb.innerHTML = "Answer: " + number.toString()
+    block_combinations()
+
 })
 
 
@@ -42,13 +40,24 @@ function block_permutations() {
     div_forth.style.display = "none"
     let answer = perm_yes_no.value
     let n = parseInt(document.getElementById("permelem").value)
-    if (answer === "Yes") {
-        div_first.style.display = "block"
-        return factorial(n)
+    if (!isNaN(n)) {
+        if (answer === "Yes") {
+            div_first.style.display = "block"
+            answer_perm.innerHTML = "Answer: " + factorial(n).toString()
+        } else {
+            let values = get_all_similar(document.getElementById("multinom").value)
+            div_forth.style.display = "block"
+            try {
+                var number = permutations_replacement(n, values)
+                answer_perm.innerHTML = "Answer: " + number.toString()
+            } catch (Exception) {
+
+            }
+
+        }
+
+
     }
-    let values = get_all_similar(document.getElementById("multinom").value)
-    div_forth.style.display = "block"
-    return permutations_replacement(n, values)
 }
 
 function get_all_similar(string) {
@@ -64,13 +73,19 @@ function block_allocations() {
     let answer = allo_yes_no.value
     let n = parseInt(document.getElementById("alocall").value)
     let k = parseInt(document.getElementById("alocnumber").value)
+    if (!isNaN(n) && !isNaN(k)) {
+        if (answer === "Yes") {
+            div_sec.style.display = "block"
+            var number = n ** k
+        } else {
+            div_fifth.style.display = "block"
+            var number = allocations(n, k)
+        }
 
-    if (answer === "Yes") {
-        div_sec.style.display = "block"
-        return n ** k
+        answer_alloc.innerHTML = "Answer: " + number.toString()
+
     }
-    div_fifth.style.display = "block"
-    return allocations(n, k)
+
 }
 
 function block_combinations() {
@@ -80,13 +95,18 @@ function block_combinations() {
     let answer = comb_yes_no.value
     let n = parseInt(document.getElementById("comball").value)
     let k = parseInt(document.getElementById("combgroupnum").value)
-    if (answer === "Yes") {
-        div_sixth.style.display = "block"
-        return non_neg_integer_equation(k, n)
-        
+    if (!isNaN(n) && !isNaN(k)) {
+        if (answer === "Yes") {
+            div_third.style.display = "block"
+            var number = combinations(n, k)
+        } else {
+            div_sixth.style.display = "block"
+            var number = non_neg_integer_equation(k, n)
+        }
+
+        answer_comb.innerHTML = "Answer: " + number.toString()
     }
-    div_third.style.display = "block"
-        return combinations(n, k)
+
 }
 
 function allocations(n, k)
