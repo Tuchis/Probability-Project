@@ -7,7 +7,7 @@
 ## Some examples of questions to clasify the problem
 ### If you want to place / mix all the objects, you should go for Permutations.
 
-Are all objects distinguishable? Yes - P, No - M
+Are all objects distinguishable? Yes - $P(n)$, No - $M_n(x1...xi)$
 
 ### If you’d like to arrange some of them into specific places, go for Allocations.
 
